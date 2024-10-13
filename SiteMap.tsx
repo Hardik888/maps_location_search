@@ -14,7 +14,6 @@ const SiteMap = () => {
   const [selectedPlace, setSelectedPlace] = useState<google.maps.places.PlaceResult | null>(null);
   const [markerRef, marker] = useAdvancedMarkerRef();
   const API_KEY = import.meta.env.VITE_GOOGLE_MAP_API_KEY;
-  console.log(API_KEY)
   return (
     <div style={{ width: '100%', height: '400px' }}> 
       <APIProvider
